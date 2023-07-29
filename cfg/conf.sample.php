@@ -1,16 +1,16 @@
 ;<?php http_response_code(403); /*
-; config file for PrivateBin
+; config file for X.OnlyGrin.com
 ;
 ; An explanation of each setting can be find online at https://github.com/PrivateBin/PrivateBin/wiki/Configuration.
 
 [main]
 ; (optional) set a project name to be displayed on the website
-; name = "PrivateBin"
+name = "X.OnlyGrin.com"
 
 ; The full URL, with the domain name and directories that point to the
 ; PrivateBin files, including an ending slash (/). This URL is essential to
 ; allow Opengraph images to be displayed on social networks.
-; basepath = "https://privatebin.example.com/"
+basepath = "https://X.OnlyGrin.com/"
 
 ; enable or disable the discussion feature, defaults to true
 discussion = true
@@ -32,20 +32,20 @@ burnafterreadingselected = false
 defaultformatter = "plaintext"
 
 ; (optional) set a syntax highlighting theme, as found in css/prettify/
-; syntaxhighlightingtheme = "sons-of-obsidian"
+syntaxhighlightingtheme = "sons-of-obsidian"
 
-; size limit per paste or comment in bytes, defaults to 10 Mebibytes
-sizelimit = 10485760
+; size limit per paste or comment in bytes, defaults to 1 Mebibytes
+sizelimit = 1048576
 
 ; template to include, default is "bootstrap" (tpl/bootstrap.php)
 template = "bootstrap"
 
 ; (optional) info text to display
 ; use single, instead of double quotes for HTML attributes
-;info = "More information on the <a href='https://privatebin.info/'>project page</a>."
+info = "X.OnlyGrin.com"
 
 ; (optional) notice to display
-; notice = "Note: This is a test service: Data may be deleted anytime. Kittens will die if you abuse this service."
+notice = "Get Free Grin Coin by following https://x.com/onlygrins"
 
 ; by default PrivateBin will guess the visitors language based on the browsers
 ; settings. Optionally you can enable the language selection menu, which uses
@@ -54,7 +54,7 @@ languageselection = false
 
 ; set the language your installs defaults to, defaults to English
 ; if this is set and language selection is disabled, this will be the only language
-; languagedefault = "en"
+languagedefault = "en"
 
 ; (optional) URL shortener address to offer after a new paste is created.
 ; It is suggested to only use this with self-hosted shorteners as this will leak
@@ -63,7 +63,7 @@ languageselection = false
 
 ; (optional) Let users create a QR code for sharing the paste URL with one click.
 ; It works both when a new paste is created and when you view a paste.
-; qrcode = true
+qrcode = true
 
 ; (optional) IP based icons are a weak mechanism to detect if a comment was from
 ; a different user when the same username was used in a comment. It might get
@@ -106,7 +106,7 @@ languageselection = false
 ; Pick compression algorithm or disable it. Only applies to pastes/comments
 ; created after changing the setting.
 ; Can be set to one these values: "none" / "zlib" (default).
-; compression = "zlib"
+compression = "zlib"
 
 [expire]
 ; expire value that is selected per default
@@ -124,7 +124,7 @@ default = "1week"
 ; Well this is not *exactly* one month, it's 30 days:
 1month = 2592000
 1year = 31536000
-never = 0
+;never = 0
 
 [formatter_options]
 ; Set available formatters, their order and their labels
@@ -135,7 +135,7 @@ markdown = "Markdown"
 [traffic]
 ; time limit between calls from the same IP address in seconds
 ; Set this to 0 to disable rate limiting.
-limit = 10
+limit = 20
 
 ; (optional) Set IPs addresses (v4 or v6) or subnets (CIDR) which are exempted
 ; from the rate-limit. Invalid IPs will be ignored. If multiple values are to
@@ -167,9 +167,9 @@ batchsize = 10
 [model]
 ; name of data model class to load and directory for storage
 ; the default model "Filesystem" stores everything in the filesystem
-class = Filesystem
-[model_options]
-dir = PATH "data"
+; class = Filesystem
+; [model_options]
+; dir = PATH "data"
 
 ;[model]
 ; example of a Google Cloud Storage configuration
@@ -179,15 +179,15 @@ dir = PATH "data"
 ;prefix = "pastes"
 ;uniformacl = false
 
-;[model]
+[model]
 ; example of DB configuration for MySQL
-;class = Database
-;[model_options]
-;dsn = "mysql:host=localhost;dbname=privatebin;charset=UTF8"
-;tbl = "privatebin_"	; table prefix
-;usr = "privatebin"
-;pwd = "Z3r0P4ss"
-;opt[12] = true	  ; PDO::ATTR_PERSISTENT
+class = Database
+[model_options]
+dsn = "mysql:host=localhost;dbname=privatebin;charset=UTF8"
+tbl = "privatebin_"	; table prefix
+usr = "privatebin"
+pwd = "Z3r0P4ss"
+opt[12] = true	  ; PDO::ATTR_PERSISTENT
 
 ;[model]
 ; example of DB configuration for SQLite
