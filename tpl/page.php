@@ -78,7 +78,7 @@ endif;
 		<header>
 			<div id="aboutbox">
 				<?php echo sprintf(
-                    I18n::_('%s is a minimalist, open source online pastebin where the server has zero knowledge of pasted data. Data is encrypted/decrypted %sin the browser%s using 256 bits AES.',
+                    I18n::_('%s is a minimalist, open source, cloned from privatebin by Grin fan to introduce the magic of slatepack of Grin crypto to the world. Visit https://grin.mw to know more! ',
                         I18n::_($NAME),
                         '%s', '%s'
                     ),
@@ -93,7 +93,7 @@ endif;
 ?>
 			</div>
 			<h1 class="title reloadlink"><?php echo I18n::_($NAME); ?></h1><br />
-			<h2 class="title"><?php echo I18n::_('Because ignorance is bliss'); ?></h2><br />
+			<h2 class="title"><?php echo I18n::_('Because Grin slatepack is bliss'); ?></h2><br />
 			<h3 class="title"><?php echo $VERSION; ?></h3>
 			<noscript><div id="noscript" class="nonworking"><?php echo I18n::_('JavaScript is required for %s to work. Sorry for the inconvenience.', I18n::_($NAME)); ?></div></noscript>
 			<div id="oldnotice" class="nonworking hidden">
