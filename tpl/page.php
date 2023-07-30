@@ -1,5 +1,5 @@
 <?php
-use PrivateBin\I18n;
+use X.OnlyGrins.com\I18n;
 ?><!DOCTYPE html>
 <html lang="<?php echo I18n::_('en'); ?>">
 	<head>
