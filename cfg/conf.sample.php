@@ -1,16 +1,16 @@
 ;<?php http_response_code(403); /*
-; config file for X.OnlyGrin.com
+; config file for X.OnlyGrins.com
 ;
 ; An explanation of each setting can be find online at https://github.com/PrivateBin/PrivateBin/wiki/Configuration.
 
 [main]
 ; (optional) set a project name to be displayed on the website
-name = "X.OnlyGrin.com"
+name = "X.OnlyGrins.com"
 
 ; The full URL, with the domain name and directories that point to the
 ; PrivateBin files, including an ending slash (/). This URL is essential to
 ; allow Opengraph images to be displayed on social networks.
-basepath = "https://X.OnlyGrin.com/"
+basepath = "https://X.OnlyGrins.com/"
 
 ; enable or disable the discussion feature, defaults to true
 discussion = true
@@ -42,7 +42,7 @@ template = "bootstrap"
 
 ; (optional) info text to display
 ; use single, instead of double quotes for HTML attributes
-info = "X.OnlyGrin.com"
+info = "X.OnlyGrins.com"
 
 ; (optional) notice to display
 notice = "Get Free Grin Coin by following https://x.com/onlygrins"
